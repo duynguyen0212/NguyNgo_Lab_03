@@ -44,7 +44,7 @@ public class MyPoint {
     /**
      * Check if points are equal
      */
-    static boolean areEqual(MyPoint p, MyPoint[] points){
+    public static boolean areEqual(MyPoint p, MyPoint[] points){
         boolean flag = false;
         for(int i = 0; i< points.length; i++) {
             if (p.x == points[i].x && p.y == points[i].y){
@@ -57,7 +57,7 @@ public class MyPoint {
     /**
      * Check if points are horizontal
      */
-    static boolean horizontal(MyPoint[] points){
+    public static boolean horizontal(MyPoint[] points){
         boolean check = true;
         for(int i = 0; i<points.length; i++){
             for(int j = 1; j<points.length;j++){
